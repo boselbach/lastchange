@@ -83,9 +83,8 @@ header.channel-list {
   display: flex;
   flex-direction: row;
   max-width: 1050px;
-  margin: 20px auto;
   flex-wrap: wrap;
-  margin-top: 70px; }
+  margin: 70px auto 40px; }
   .program-cards .program-card {
     width: 240px;
     height: 230px;
@@ -123,20 +122,29 @@ body {
   font-family: "Arial Black",sans-serif; }
 
 footer {
-  height: 60px;
-  background-color: grey;
+  height: 40px;
+  background-color: #fff;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  border-top: 1px solid grey;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
   footer button {
-    width: 50%;
-    background-color: #4d4d4d;
+    background-color: transparent;
     height: 50px;
-    color: #fff;
+    color: grey;
     outline: none;
     font-size: 22px;
     border: none;
-    cursor: pointer; }
-    footer button:hover {
-      background-color: #e5e5e5;
-      color: #333; }
+    cursor: pointer;
+    display: flex;
+    align-items: center; }
+    footer button .plus {
+      color: #ffd400;
+      font-size: 32px; }
+    footer button .text {
+      margin-left: 10px; }
+      footer button .text:hover {
+        text-decoration: underline; }
