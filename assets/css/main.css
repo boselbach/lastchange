@@ -55,6 +55,9 @@ header.channel-list {
     display: flex;
     align-items: center;
     flex: 0 0 150px; }
+    @media only screen and (max-width: 600px) {
+      header.channel-list figure {
+        flex: initial; } }
   header.channel-list nav {
     flex: 1; }
     header.channel-list nav ul {
@@ -78,6 +81,20 @@ header.channel-list {
           color: #fff; }
         header.channel-list nav ul li:first-child {
           margin-left: 0; }
+        @media only screen and (max-width: 600px) {
+          header.channel-list nav ul li {
+            border-bottom: 1px solid #424242;
+            flex: 0 33%;
+            height: 30px;
+            font-size: 12px; } }
+      @media only screen and (max-width: 600px) {
+        header.channel-list nav ul {
+          flex-wrap: wrap;
+          margin-right: 0; } }
+  @media only screen and (max-width: 600px) {
+    header.channel-list {
+      flex-direction: column;
+      height: 80px; } }
 
 .program-cards {
   display: flex;
@@ -116,6 +133,10 @@ header.channel-list {
       font-family: verdana; }
     .program-cards .program-card img {
       width: 240px; }
+  @media only screen and (max-width: 600px) {
+    .program-cards {
+      justify-content: center;
+      margin: 100px auto 40px; } }
 
 body {
   background-color: lightgrey;

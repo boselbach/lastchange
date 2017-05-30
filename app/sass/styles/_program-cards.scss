@@ -63,4 +63,9 @@
             width: 240px;
         }
     }
+
+    @media only screen and (max-width : 600px) {
+        justify-content: center;
+        margin: 100px auto 40px;
+    }
 }
