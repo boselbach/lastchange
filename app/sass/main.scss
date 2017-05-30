@@ -8,25 +8,38 @@ body {
 }
 
 footer {
-    height: 60px;
-    background-color: grey;
+    height: 40px;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid grey;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
     button {
-        width: 50%;
-        background-color: #4d4d4d;
+        background-color: transparent;
         height: 50px;
-        color: #fff;
+        color: grey;
         outline: none;
         font-size: 22px;
         border: none;
         cursor: pointer;
+        display: flex;
+        align-items: center;
 
-        &:hover {
-            background-color: #e5e5e5;
-            color: #333;
+        .plus {
+            color: #ffd400;
+            font-size: 32px;
+        }
+
+        .text {
+            margin-left: 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
