@@ -3,8 +3,6 @@ import React from 'react';
 export default class ProgramCard extends React.Component {
     constructor(props) {
         super(props);
-
-        console.log(props);
     }
 
     render() {
