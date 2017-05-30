@@ -1,7 +1,7 @@
 header.channel-list {
     display: flex;
     flex-direction: row;
-    background: #262626;
+    background-color: #262626;
     border-bottom: 1px solid #424242;
     height: 50px;
 
@@ -22,7 +22,7 @@ header.channel-list {
 
             li {
                 color: #333;
-                font-size: 22px;
+                font-size: 18px;
                 flex: 1;
                 height: 100%;
                 background-color: #e5e5e5;

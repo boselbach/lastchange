@@ -17,14 +17,16 @@
         justify-content: center;
         position: relative;
         overflow: hidden;
+        box-shadow: -1px 1px 12px 1px #555;
 
         .title {
             color: #fff;
             position: absolute;
-            top: 10px;
+            top: 15px;
             left: 0;
             right: 0;
             text-align: center;
+            font-size: 14px;
         }
 
         &.expire-soon {
@@ -33,17 +35,17 @@
                 color: #ededed;
                 background-color: #ff001e;
                 position: absolute;
-                left: -24px;
-                bottom: 30px;
+                left: -25px;
+                bottom: 24px;
                 width: 145px;
-                height: 20px;
-                /* z-index: 102; */
+                height: 25px;
                 text-align: center;
                 line-height: 22px;
                 transform: rotate(40deg);
-                font-size: 10px;
+                font-size: 9px;
                 letter-spacing: 5px;
                 z-index: 10;
+                box-shadow: -1px 0px 7px 1px #333;
             }
         }
 
