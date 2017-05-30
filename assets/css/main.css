@@ -46,7 +46,7 @@ header.channel-list {
   flex-direction: row;
   background-color: #262626;
   border-bottom: 1px solid #424242;
-  height: 50px;
+  height: 40px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -54,7 +54,7 @@ header.channel-list {
   header.channel-list figure {
     display: flex;
     align-items: center;
-    flex: 0 0 200px; }
+    flex: 0 0 150px; }
   header.channel-list nav {
     flex: 1; }
     header.channel-list nav ul {
@@ -101,7 +101,7 @@ header.channel-list {
     .program-cards .program-card .title {
       color: #fff;
       position: absolute;
-      top: 15px;
+      top: 10px;
       left: 0;
       right: 0;
       text-align: center;

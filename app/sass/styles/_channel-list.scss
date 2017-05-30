@@ -3,7 +3,7 @@ header.channel-list {
     flex-direction: row;
     background-color: #262626;
     border-bottom: 1px solid #424242;
-    height: 50px;
+    height: 40px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -12,7 +12,7 @@ header.channel-list {
     figure {
         display: flex;
         align-items: center;
-        flex: 0 0 200px;
+        flex: 0 0 150px;
     }
 
     nav {
