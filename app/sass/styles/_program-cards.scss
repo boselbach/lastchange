@@ -1,9 +1,10 @@
 .program-cards {
     display: flex;
     flex-direction: row;
-    max-width: 1050;
+    max-width: 1050px;
     margin: 20px auto;
     flex-wrap: wrap;
+    margin-top: 70px;
 
     .program-card {
         width: 240px;
@@ -30,23 +31,23 @@
         }
 
         &.expire-soon {
-            &:before {
-                content: 'Last change';
-                color: #ededed;
-                background-color: #ff001e;
-                position: absolute;
-                left: -25px;
-                bottom: 24px;
-                width: 145px;
-                height: 25px;
-                text-align: center;
-                line-height: 22px;
-                transform: rotate(40deg);
-                font-size: 9px;
-                letter-spacing: 5px;
-                z-index: 10;
-                box-shadow: -1px 0px 7px 1px #333;
-            }
+            // &:before {
+            //     content: 'Last change';
+            //     color: #ededed;
+            //     background-color: #ff001e;
+            //     position: absolute;
+            //     left: -25px;
+            //     bottom: 24px;
+            //     width: 145px;
+            //     height: 25px;
+            //     text-align: center;
+            //     line-height: 22px;
+            //     transform: rotate(40deg);
+            //     font-size: 9px;
+            //     letter-spacing: 5px;
+            //     z-index: 10;
+            //     box-shadow: -1px 0px 7px 1px #333;
+            // }
         }
 
         img {

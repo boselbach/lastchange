@@ -46,7 +46,11 @@ header.channel-list {
   flex-direction: row;
   background-color: #262626;
   border-bottom: 1px solid #424242;
-  height: 50px; }
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100; }
   header.channel-list figure {
     display: flex;
     align-items: center;
@@ -78,9 +82,10 @@ header.channel-list {
 .program-cards {
   display: flex;
   flex-direction: row;
-  max-width: 1050;
+  max-width: 1050px;
   margin: 20px auto;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 70px; }
   .program-cards .program-card {
     width: 240px;
     height: 230px;
@@ -102,22 +107,6 @@ header.channel-list {
       right: 0;
       text-align: center;
       font-size: 14px; }
-    .program-cards .program-card.expire-soon:before {
-      content: 'Last change';
-      color: #ededed;
-      background-color: #ff001e;
-      position: absolute;
-      left: -25px;
-      bottom: 24px;
-      width: 145px;
-      height: 25px;
-      text-align: center;
-      line-height: 22px;
-      transform: rotate(40deg);
-      font-size: 9px;
-      letter-spacing: 5px;
-      z-index: 10;
-      box-shadow: -1px 0px 7px 1px #333; }
     .program-cards .program-card img {
       width: 240px; }
 
