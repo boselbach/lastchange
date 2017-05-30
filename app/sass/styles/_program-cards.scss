@@ -30,6 +30,16 @@
             font-size: 14px;
         }
 
+        .duration {
+            position: absolute;
+            bottom: 15px;
+            left: 10px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 100;
+            font-family: verdana;
+        }
+
         &.expire-soon {
             // &:before {
             //     content: 'Last change';
