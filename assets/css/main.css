@@ -44,7 +44,7 @@ table {
 header.channel-list {
   display: flex;
   flex-direction: row;
-  background: #262626;
+  background-color: #262626;
   border-bottom: 1px solid #424242;
   height: 50px; }
   header.channel-list figure {
@@ -60,7 +60,7 @@ header.channel-list {
       margin-right: 20px; }
       header.channel-list nav ul li {
         color: #333;
-        font-size: 22px;
+        font-size: 18px;
         flex: 1;
         height: 100%;
         background-color: #e5e5e5;
@@ -92,35 +92,38 @@ header.channel-list {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    box-shadow: -1px 1px 12px 1px #555; }
     .program-cards .program-card .title {
       color: #fff;
       position: absolute;
-      top: 10px;
+      top: 15px;
       left: 0;
       right: 0;
-      text-align: center; }
+      text-align: center;
+      font-size: 14px; }
     .program-cards .program-card.expire-soon:before {
       content: 'Last change';
       color: #ededed;
       background-color: #ff001e;
       position: absolute;
-      left: -24px;
-      bottom: 30px;
+      left: -25px;
+      bottom: 24px;
       width: 145px;
-      height: 20px;
-      /* z-index: 102; */
+      height: 25px;
       text-align: center;
       line-height: 22px;
       transform: rotate(40deg);
-      font-size: 10px;
+      font-size: 9px;
       letter-spacing: 5px;
-      z-index: 10; }
+      z-index: 10;
+      box-shadow: -1px 0px 7px 1px #333; }
     .program-cards .program-card img {
       width: 240px; }
 
 body {
-  background-color: lightgrey; }
+  background-color: lightgrey;
+  font-family: "Arial Black",sans-serif; }
 
 footer {
   height: 60px;
@@ -134,4 +137,9 @@ footer {
     height: 50px;
     color: #fff;
     outline: none;
-    font-size: 22px; }
+    font-size: 22px;
+    border: none;
+    cursor: pointer; }
+    footer button:hover {
+      background-color: #e5e5e5;
+      color: #333; }
