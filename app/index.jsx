@@ -51,19 +51,14 @@ class TVShows extends React.Component {
     ProgramService.loadMore(channel)
     .then(response => {
       let items = response.Items;
-      console.log(response);
 
       this.setState((prevState, props) => {
         return {
           cards: prevState.cards.concat(items)
         };
       });
-      // for (let i in items) {
-      //   let item = items[i];
 
-
-      //   console.log(item)
-      // }
+      document.body.scrollTop = document.body.scrollHeight;
     });
   }
 
