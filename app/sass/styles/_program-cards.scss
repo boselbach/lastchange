@@ -1,0 +1,54 @@
+.program-cards {
+    display: flex;
+    flex-direction: row;
+    max-width: 1050;
+    margin: 20px auto;
+    flex-wrap: wrap;
+
+    .program-card {
+        width: 240px;
+        height: 230px;
+        border: 1px solid;
+        margin: 10px;
+        background-color: #262626;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+
+        .title {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        &.expire-soon {
+            &:before {
+                content: 'Last change';
+                color: #ededed;
+                background-color: #ff001e;
+                position: absolute;
+                left: -24px;
+                bottom: 30px;
+                width: 145px;
+                height: 20px;
+                /* z-index: 102; */
+                text-align: center;
+                line-height: 22px;
+                transform: rotate(40deg);
+                font-size: 10px;
+                letter-spacing: 5px;
+                z-index: 10;
+            }
+        }
+
+        img {
+            width: 240px;
+        }
+    }
+}
