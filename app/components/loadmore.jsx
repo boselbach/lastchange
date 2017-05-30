@@ -8,7 +8,10 @@ export default class LoadMore extends React.Component {
     render() {
         return (
             <footer>
-                <button onClick={() => this.props.loadMore()}>Load more</button>
+                <button onClick={() => this.props.loadMore()}>
+                    <span className="plus">&#x2295;</span>
+                    <span className="text">Load more</span>
+                </button>
             </footer>
         );
     }
